@@ -4,7 +4,7 @@
 #use standard_io(B)
 #use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7)
 
-int higherNibble; int lowerNibnle;
+int higherNibble; int lowerNibble;
 
 //how the keypad is imagined to look
 //      RB3 RB2 RB1
@@ -13,7 +13,7 @@ int higherNibble; int lowerNibnle;
 // RB5   7   8   9
 // RB4   F   0   E
 
-char matix[4][3] = {
+char matrix[4][3] = {
                         {'1', '2', '3'},
                         {'4', '5', '6'},
                         {'7', '8', '9'},
@@ -26,7 +26,7 @@ void determineHigherNibble(void)
    else if (input_state(PIN_B6)) higherNibble = 6;
    else if (input_state(PIN_B5)) higherNibble = 5;
    else if (input_state(PIN_B4)) higherNibble = 4;
-   else higherNibbel = 0;
+   else higherNibble = 0;
 }
 
 void debounce(void)
@@ -79,7 +79,7 @@ char findChar(void)
       case 1: col = 2; break;
    }
    
-   return matrica[row][col];
+   return matrix[row][col];
 }
 
 void showOnLCD(char charachter) //should be show on 7Segmet
@@ -133,7 +133,7 @@ void interrupt(void)
       
       charachter = findChar();
       
-      showOnLCD(karakter);
+      showOnLCD(charachter);
    }
 }
 

@@ -2,7 +2,7 @@
 #fuses HS,NOWDT,NOPROTECT,NOLVP,PUT
 #use delay(clock=20000000)
 #use standard_io(B)
-#use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7)
+//#use rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7)   was used for debugging
 
 int higherNibble; int lowerNibble;
 

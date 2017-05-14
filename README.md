@@ -14,6 +14,8 @@ RB4--F-----0-----E<br />
 RB4:RB7 are used for RB interrupts (connected to 10k resistors),<br />
 RB1:RB3 are logical "1" for reading inputs(connected to 1k resistors).<br />
 
+How it works: http://screencast-o-matic.com/watch/cbh2lUXwlR
+
 A ports used for the 7 segment display.
 
 What will (needs to) be included:

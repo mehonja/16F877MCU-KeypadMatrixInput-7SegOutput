@@ -1,7 +1,7 @@
 # 16F877MCU-KeypadMatrixInput-7SegOutput
-Reads the built in PIC C Simulator IDE keypad matrix inputs and displays output onto a 7 segmet display.<<
-Compiler used: CCS C v.4
-Simulator used: PIC Simulator IDE v6.40
+Reads the built in PIC C Simulator IDE keypad matrix inputs and displays output onto a 7 segmet display.<br />
+Compiler used: CCS C v.4<br />
+Simulator used: PIC Simulator IDE v6.40<br />
 
 They keypad is meant to be configured as following:
 
